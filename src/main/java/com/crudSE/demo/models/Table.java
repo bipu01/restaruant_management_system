@@ -10,12 +10,5 @@ import java.util.List;
 @Entity
 public class Table {
   
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-  
-  @OneToMany
-  @JoinColumn(name = "table_customers")
-  private List<OrderItem> orderItems = new ArrayList<>();
-  
+
 }
