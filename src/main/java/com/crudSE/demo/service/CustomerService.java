@@ -24,6 +24,7 @@ public class CustomerService {
       throw new AlreadyExistsException("The Customer with email: " + customer.getEmail() + " already exists");
     }
     
+    
     return CustomerMapper.mapToCustomerDTO( this.customerRepository.save(customer));
   }
   
